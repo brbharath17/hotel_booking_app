@@ -1,0 +1,31 @@
+# == Schema Information
+#
+# Table name: hotels
+#
+#  id             :bigint           not null, primary key
+#  address        :text             not null
+#  name           :string           not null
+#  phone          :string           not null
+#  price_per_room :decimal(20, 2)   default(0.0), not null
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#  city_id        :bigint           not null
+#
+# Indexes
+#
+#  index_hotels_on_city_id  (city_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (city_id => cities.id)
+#
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the "{}" from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: {}
+# column: value
+#
+two: {}
+# column: value
